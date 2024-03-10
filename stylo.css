@@ -42,17 +42,19 @@ body{
 
 
 .inputTask {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     position: absolute;
     margin-top: 500px;
+    width: 750px;
     margin-left: 60px;
+    background-color: black;
 }
 
 
-
 .formtask{
-    background-color: #3c6e71;
     border-radius: 20px;
-    opacity: 0.5;
     height: 420px;
     width: 350px;
 }
