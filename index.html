@@ -8,6 +8,10 @@
 </head>
 <body>
     <div class="container">
+        <div class="titulos">
+            <h1>Lista de Tarefas:</h1>
+            <h1>Tarefas completadas:</h1>
+        </div>
         <div class="newTask boxtask">
             <div class="formtask" id="form-task-new">
 
@@ -15,17 +19,17 @@
         </div>
             <div class="inputTask">
                 <div>
-                    <input type="text" id="new-task" placeholder="Agrega uma nova tarefa">
-                    <button id="button-task">Agregar uma nova tarefa</button>
+                    <input class="write-user-task" type="text" id="new-task" placeholder="Digite uma nova tarefa">
+                    <button class="button" id="button-task">Inserir nova tarefa</button>
                 </div>
                 <div>
-                    <button id="button-remove-task">Remover Tareas completadas</button>
+                    <button class="button" id="button-remove-task">Remover Tarefas completadas</button>
                 </div>
             </div>
-            <div class="completeTask boxtask">
-            <div class="formtask" id="form-task-completed">   
+        <div class="completeTask boxtask">
+                <div class="formtask" id="form-task-completed">   
 
-            </div>           
+                </div>           
         </div>
     </div>
     <script src="script.js"></script>

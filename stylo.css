@@ -12,7 +12,7 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    background-color: #3c6e71;
+    background-color: #fdfcdc;
     
 }
 
@@ -21,7 +21,7 @@ body{
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #d9d9d9;
+    background-color: #f07167;
     height: 600px;
     width: 900px;
     border-radius: 20px;
@@ -32,7 +32,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
+    background-color:#fed9b7;
     height: 450px;
     width: 400px;
     margin-left: 20px;
@@ -47,9 +47,8 @@ body{
     justify-content: space-between;
     position: absolute;
     margin-top: 500px;
-    width: 750px;
-    margin-left: 60px;
-    background-color: black;
+    width: 780px;
+    margin-left: 30px;
 }
 
 
@@ -60,3 +59,73 @@ body{
 }
 
 
+.completeTask {
+    text-decoration: line-through;
+}
+
+.oneTask {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+.checkOneTask {
+    margin-right: 20px;
+}
+
+
+.oneTask label {
+    cursor: pointer;
+}
+
+
+.oneTask {
+    font-size: 16px;
+    background-color: #0081a7;
+    height: 40px;
+    width: 350px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: #fdfcdc;
+    font-weight: bold;
+}
+
+
+.oneTask input {
+    background-color: white;
+    width: 20px; 
+    height: 20px; 
+    outline: none; 
+    cursor: pointer; 
+    margin-left: 10px;
+}
+
+
+.button {
+  padding: 10px 20px;
+  background-color: #0081a7;
+  color: #fdfcdc;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.write-user-task {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.titulos{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    margin-bottom: 500px;
+    margin-left: 40px;
+    width: 750px;
+    color:#fdfcdc;
+    font-weight: bold;
+}

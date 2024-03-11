@@ -1,7 +1,14 @@
 let buttonNewTask = document.getElementById('button-task')
 let buttonRemoveTask = document.getElementById('button-remove-task')
 
-buttonNewTask.addEventListener('click', newTask)
+buttonNewTask.addEventListener('click', () => {
+    let textNewTask = document.getElementById('new-task')
+    if (textNewTask.value !== '') {
+        newTask()
+    } else {
+        console.log('O usuario não digitou uma tarefa')
+    }
+})
 buttonNewTask.addEventListener('click', () => {
     let textNewTask = document.getElementById('new-task')
     textNewTask.value = ''
@@ -23,10 +30,12 @@ function newTask(){
     
     let newTaskCheck = document.createElement('input')
     newTaskCheck.type = 'checkbox'
+    newTaskCheck.id = 'checkbox'
     newTaskCheck.className = 'checkOneTask'
     newTaskCheck.addEventListener('change', moveTask)
     
     let newLabelTask = document.createElement('label')
+    newLabelTask.setAttribute('for', 'checkbox')
     newLabelTask.innerText= textNewTask
     
     boxNewTask.appendChild(newTask)
